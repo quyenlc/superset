@@ -104,7 +104,7 @@ const PropertiesModal = ({
 }: PropertiesModalProps) => {
   const [form] = AntdForm.useForm();
   const [isLoading, setIsLoading] = useState(false);
-  const [isAdvancedOpen, setIsAdvancedOpen] = useState(false);
+  const [isAdvancedOpen, setIsAdvancedOpen] = useState(true);
   const [colorScheme, setColorScheme] = useState(currentColorScheme);
   const [jsonMetadata, setJsonMetadata] = useState('');
   const [dashboardInfo, setDashboardInfo] = useState<DashboardInfo>();
@@ -778,7 +778,7 @@ const PropertiesModal = ({
                     onChange={setJsonMetadata}
                     tabSize={2}
                     width="100%"
-                    height="200px"
+                    height="1000px"
                     wrapEnabled
                   />
                 </StyledFormItem>
